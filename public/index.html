@@ -1637,6 +1637,24 @@
         }
 
         @media (max-width: 768px) {
+            html, body {
+                overflow-x: hidden;
+                max-width: 100vw;
+            }
+
+            .navbar {
+                overflow-x: hidden;
+            }
+
+            .navbar .container {
+                max-width: 100%;
+                padding: 0 16px;
+            }
+
+            .container {
+                padding: 0 16px;
+            }
+
             .nav-links {
                 display: none;
                 position: fixed;
@@ -1678,6 +1696,11 @@
                 padding-bottom: 60px;
             }
 
+            .hero-content {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
             .hero-stats {
                 gap: 24px;
             }
@@ -1696,6 +1719,20 @@
             }
 
             .about-features {
+                grid-template-columns: 1fr;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .solutions-grid {
                 grid-template-columns: 1fr;
             }
 
