@@ -1,0 +1,10 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.flowmachinery.com" }],
+      "destination": "https://flowmachinery.com/:path*",
+      "permanent": true
+    }
+  ]
+}
