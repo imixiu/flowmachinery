@@ -1,13 +1,7 @@
-import { readFile } from "fs/promises";
-import path from "path";
 import { getArticleBySlug } from "../../../lib/db";
+import { HEADER_HTML, FOOTER_HTML } from "../../../../lib/templates";
 
 export const dynamic = "force-dynamic";
-
-async function loadTemplate(name: string): Promise<string> {
-  const filePath = path.join(process.cwd(), "templates", name);
-  return readFile(filePath, "utf-8");
-}
 
 function escapeHtml(s: string): string {
   return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
@@ -55,10 +49,8 @@ export async function GET(
   const article = await getArticleBySlug(slug.replace(/\r/g, ""));
   if (!article) return new Response("Article not found", { status: 404 });
 
-  const [header, footer] = await Promise.all([
-    loadTemplate("header.html"),
-    loadTemplate("footer.html"),
-  ]);
+  const header = HEADER_HTML;
+  const footer = FOOTER_HTML;
 
   const title = article.title ?? "";
   const description = article.description ?? "";

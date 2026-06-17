@@ -18,6 +18,13 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "typescript": "^5"
+    "typescript": "^5",
+    "@opennextjs/cloudflare": "1.19.11",
+    "wrangler": "4.99.0"
+  },
+  "overrides": {
+    "@aws-sdk/core": "3.974.21",
+    "@aws-sdk/client-s3": "3.974.0",
+    "@aws-sdk/s3-request-presigner": "3.974.0"
   }
 }

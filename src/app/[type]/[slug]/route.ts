@@ -1,13 +1,7 @@
-import { readFile } from "fs/promises";
-import path from "path";
-import { getArticleBySlug, getRelatedArticles } from "../../../lib/db";
+import { getArticleBySlug, getRelatedArticles, getAuthorBySlug } from "../../../lib/db";
+import { HEADER_HTML, FOOTER_HTML } from "../../../../lib/templates";
 
 export const dynamic = "force-dynamic";
-
-async function loadTemplate(name: string): Promise<string> {
-  const filePath = path.join(process.cwd(), "templates", name);
-  return readFile(filePath, "utf-8");
-}
 
 function escapeHtml(s: string): string {
   return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
@@ -56,15 +50,13 @@ export async function GET(
 
   if (!article) return new Response("Article not found", { status: 404 });
 
-  const [header, footer, related] = await Promise.all([
-    loadTemplate("header.html"),
-    loadTemplate("footer.html"),
-    getRelatedArticles(article.id, article.type ?? type),
-  ]);
+  const authorName = article.author ?? "";
+  const authorSlug = authorName.toLowerCase().replace(/\s+/g, "-");
+  const [header, footer, related, authorData] = [HEADER_HTML, FOOTER_HTML, await getRelatedArticles(article.id, article.type ?? type), authorSlug ? await getAuthorBySlug(authorSlug) : null];
 
   const title = article.title ?? "";
   const description = article.description ?? "";
-  const author = article.author ?? "";
+  const author = authorName;
   const pubTime = article.published_time ?? article.modified_time;
   const coverImg = article.img ?? "";
   const ogImage = coverImg || "https://flowmachinery.com/assets/og-image.jpg";
@@ -83,10 +75,10 @@ export async function GET(
     .replace("{{TWITTER_DESCRIPTION}}", escapeHtml(description))
     .replace("{{TWITTER_IMAGE}}", escapeHtml(ogImage));
 
-  const authorSlug = encodeURIComponent(author.toLowerCase().replace(/\s+/g, "-"));
+  const encodedAuthorSlug = encodeURIComponent(authorSlug);
   const pubDate = pubTime ? new Date(pubTime).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" }) : "";
   const metaParts: string[] = [];
-  if (author) metaParts.push(`By <a href="/author/${authorSlug}" class="meta-author">${escapeHtml(author)}</a>`);
+  if (author) metaParts.push(`By <a href="/author/${encodedAuthorSlug}" class="meta-author">${escapeHtml(author)}</a>`);
   if (pubDate) metaParts.push(`<time class="meta-date">${escapeHtml(pubDate)}</time>`);
   const metaBlock = metaParts.length ? `<div class="article-meta">${metaParts.join(" · ")}</div>` : "";
   const coverBlock = coverImg ? `<img class="article-cover" src="${escapeHtml(coverImg)}" alt="${escapeHtml(title)}" loading="eager">` : "";
@@ -110,6 +102,17 @@ export async function GET(
 
   const titleBlock = `<div class="article-header-area">` + breadcrumb + `${coverBlock}<h1>${escapeHtml(title)}</h1>${metaBlock}</div>`;
 
+  // Author bio box
+  let authorBioHtml = "";
+  if (authorData) {
+    const aName = escapeHtml(authorData.name ?? author);
+    const aDesc = escapeHtml(authorData.description ?? "");
+    const aImg = authorData.img
+      ? `<img class="author-bio-avatar" src="${escapeHtml(authorData.img)}" alt="${aName}" loading="lazy">`
+      : `<div class="author-bio-avatar author-bio-avatar-placeholder">${aName.split(" ").map((w: string) => w[0]).join("")}</div>`;
+    authorBioHtml = `<div class="author-bio">${aImg}<div class="author-bio-info"><h4>Written by <a href="/author/${encodedAuthorSlug}">${aName}</a></h4>${aDesc ? `<p>${aDesc}</p>` : ""}</div></div>`;
+  }
+
   let relatedHtml = "";
   if (related.length > 0) {
     const articleType = article.type ?? type;
@@ -125,7 +128,7 @@ export async function GET(
   }
 
   const jsonLd = buildJsonLd(article, _request.url);
-  const html = renderedHeader + `<main class="article-wrap"><article class="blog-post">` + titleBlock + (article.body ?? "") + `</article>` + relatedHtml + `</main>` + breadcrumbListScript + footer.replace("</body>", `${jsonLd}</body>`);
+  const html = renderedHeader + `<main class="article-wrap"><article class="blog-post">` + titleBlock + (article.body ?? "") + `</article>` + authorBioHtml + relatedHtml + `</main>` + breadcrumbListScript + footer.replace("</body>", `${jsonLd}</body>`);
   return new Response(html, { status: 200, headers: { "Content-Type": "text/html; charset=utf-8",
       "Cache-Control": "public, s-maxage=31536000" } });
 }

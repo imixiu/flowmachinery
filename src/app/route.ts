@@ -1,12 +1,8 @@
-import { readFile } from "fs/promises";
-import path from "path";
+import { INDEX_HTML } from "../../lib/index-html";
 
 export async function GET() {
-  const filePath = path.join(process.cwd(), "public", "index.html");
-  const html = await readFile(filePath, "utf-8");
-  return new Response(html, {
+  return new Response(INDEX_HTML, {
     status: 200,
-    headers: { "Content-Type": "text/html; charset=utf-8",
-      "Cache-Control": "public, s-maxage=31536000" },
+    headers: { "Content-Type": "text/html; charset=utf-8" },
   });
 }
