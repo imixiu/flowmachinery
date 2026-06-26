@@ -181,7 +181,7 @@ export const FOOTER_HTML = `<footer style="background:#111827;color:#94a3b8;padd
 </div>
 </div>
 <div style="text-align:center;margin-top:32px;padding-top:24px;border-top:1px solid rgba(59,130,246,0.1);font-size:0.8rem;color:#64748b">
-&copy; 2026 FlowMachinery. All rights reserved. &nbsp;·&nbsp; <a href="/privacy-policy" style="color:#64748b">Privacy Policy</a> &nbsp;·&nbsp; <a href="/terms-of-service" style="color:#64748b">Terms of Service</a> &nbsp;·&nbsp; <a href="/cookie-policy" style="color:#64748b">Cookie Policy</a>
+&copy; 2026 FlowMachinery. All rights reserved.
 </div>
 </footer>
 </body>

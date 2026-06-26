@@ -149,6 +149,6 @@ export async function GET(
   return new Response(html, {
     status: 200,
     headers: { "Content-Type": "text/html; charset=utf-8",
-      "Cache-Control": "public, s-maxage=31536000" },
+      "Cache-Control": "public, max-age=31536000, s-maxage=31536000" },
   });
 }

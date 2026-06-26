@@ -48,7 +48,7 @@ export async function GET(
   const { type, slug } = await params;
   const article = await getArticleBySlug(slug.replace(/\r/g, ""));
 
-  if (!article) return new Response("Article not found", { status: 404 });
+  if (!article) return new Response("Article not found", { status: 404, headers: { "Cache-Control": "no-store" } });
 
   const authorName = article.author ?? "";
   const authorSlug = authorName.toLowerCase().replace(/\s+/g, "-");
@@ -130,5 +130,5 @@ export async function GET(
   const jsonLd = buildJsonLd(article, _request.url);
   const html = renderedHeader + `<main class="article-wrap"><article class="blog-post">` + titleBlock + (article.body ?? "") + `</article>` + authorBioHtml + relatedHtml + `</main>` + breadcrumbListScript + footer.replace("</body>", `${jsonLd}</body>`);
   return new Response(html, { status: 200, headers: { "Content-Type": "text/html; charset=utf-8",
-      "Cache-Control": "public, s-maxage=31536000" } });
+      "Cache-Control": "public, max-age=31536000, s-maxage=31536000" } });
 }
