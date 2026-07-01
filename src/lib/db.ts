@@ -1,4 +1,5 @@
 import { neon } from "@neondatabase/serverless";
+import { tairGet, tairSet } from "./tair";
 
 const SITE = "flowmachinery";
 
@@ -41,8 +42,14 @@ export async function getArticlesByTypePaged(
 }
 
 export async function getArticleBySlug(slug: string) {
+  const key = `flowmachinery:article:${slug}`;
+  const cached = await tairGet(key);
+  if (cached) return cached;
+
   const results = await getDb()`SELECT * FROM articles WHERE site=${SITE} AND short_title=${slug.replace(/\r/g, "")} AND is_online = 'Y' LIMIT 1` as any[];
-  return results[0];
+  const article = results[0];
+  if (article) tairSet(key, article);
+  return article;
 }
 
 export async function getRelatedArticles(articleId: number, type: string) {
