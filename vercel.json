@@ -5,6 +5,16 @@
       "has": [{ "type": "host", "value": "www.flowmachinery.com" }],
       "destination": "https://flowmachinery.com/:path*",
       "permanent": true
+    },
+    {
+      "source": "/sitemap.xml",
+      "destination": "/sitemap/sitemapindex.xml",
+      "permanent": true
+    },
+    {
+      "source": "/favicon.ico",
+      "destination": "/icon.png",
+      "permanent": true
     }
   ]
 }
