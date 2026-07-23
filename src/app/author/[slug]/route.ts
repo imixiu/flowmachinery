@@ -37,7 +37,7 @@ export async function GET(
     let renderedHeader = header
       .replace("{{TITLE}}", escapeHtml(title))
       .replace("{{DESCRIPTION}}", escapeHtml("Meet the FlowMachinery editorial team."))
-      .replace("{{CANONICAL}}", canonical);
+      .replace("{{CANONICAL}}", canonical).replace('</head>', '<meta name="robots" content="noindex, follow">\n</head>');
     renderedHeader = addOGReplacements(renderedHeader, `${title} — FlowMachinery`, "Meet our team of industrial experts, engineers, and technical journalists.", canonical);
 
     const teamAuthor = authors.find((a) => a.slug === "team");
@@ -71,7 +71,7 @@ export async function GET(
   let renderedHeader = header
     .replace("{{TITLE}}", escapeHtml(name))
     .replace("{{DESCRIPTION}}", escapeHtml(author.description ?? ""))
-    .replace("{{CANONICAL}}", canonical);
+    .replace("{{CANONICAL}}", canonical).replace('</head>', '<meta name="robots" content="noindex, follow">\n</head>');
   renderedHeader = addOGReplacements(renderedHeader, `${name} — FlowMachinery`, author.description ?? "Industrial expert at FlowMachinery.", canonical, author.img ?? undefined);
 
   const imgTag = author.img ? `<img src="${escapeHtml(author.img)}" alt="${escapeHtml(name)}" class="author-avatar" />` : "";

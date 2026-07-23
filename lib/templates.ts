@@ -14,7 +14,8 @@ export const HEADER_HTML = `<!DOCTYPE html>
 </script>
 
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/icon.png?v=2" type="image/png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{{TITLE}} — FlowMachinery</title>
 <meta name="description" content="{{DESCRIPTION}}">
 <link rel="canonical" href="{{CANONICAL}}">

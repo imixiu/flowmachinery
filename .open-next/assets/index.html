@@ -1,0 +1,2718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-95PY8PSZ0Y"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-95PY8PSZ0Y');
+</script>
+    <meta charset="UTF-8">
+<link rel="icon" href="/icon.png?v=2" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="FlowMachinery — Precision Industrial Machinery & Automation Solutions">
+    <meta name="description" content="FlowMachinery delivers high-performance CNC machines, hydraulic systems, industrial automation, and manufacturing equipment. Trusted by 2,000+ manufacturers worldwide since 1998.">
+    <meta name="keywords" content="industrial machinery, CNC machines, hydraulic systems, industrial automation, manufacturing equipment, precision engineering">
+    <meta name="robots" content="index, follow">
+    <meta name="msvalidate.01" content="C396E9907374E29FB46754412E4E3FB7" />
+    <link rel="canonical" href="https://flowmachinery.com/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://flowmachinery.com/">
+    <meta property="og:title" content="FlowMachinery — Precision Industrial Machinery & Automation Solutions">
+    <meta property="og:description" content="High-performance CNC machines, hydraulic systems, industrial automation, and manufacturing equipment. Trusted by 2,000+ manufacturers worldwide.">
+    <meta property="og:image" content="https://flowmachinery.com/assets/og-image.jpg">
+    <meta property="og:site_name" content="FlowMachinery">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="FlowMachinery — Precision Industrial Machinery & Automation Solutions">
+    <meta name="twitter:description" content="High-performance CNC machines, hydraulic systems, industrial automation, and manufacturing equipment.">
+    <meta name="twitter:image" content="https://flowmachinery.com/assets/og-image.jpg">
+
+    <title>FlowMachinery — Precision Industrial Machinery & Automation Solutions</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "FlowMachinery",
+        "url": "https://flowmachinery.com",
+        "logo": "https://flowmachinery.com/assets/logo.svg",
+        "description": "FlowMachinery delivers high-performance CNC machines, hydraulic systems, industrial automation, and manufacturing equipment for global manufacturers.",
+        "foundingDate": "1998",
+        "numberOfEmployees": {
+            "@type": "QuantitativeValue",
+            "minValue": 500,
+            "maxValue": 1000
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "2800 Industrial Parkway, Suite 400",
+            "addressLocality": "Cleveland",
+            "addressRegion": "OH",
+            "postalCode": "44115",
+            "addressCountry": "US"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+1-800-555-0198",
+            "contactType": "sales",
+            "availableLanguage": ["English", "Spanish", "German", "Chinese"]
+        },
+        "sameAs": [
+            "https://www.linkedin.com/company/flowmachinery",
+            "https://www.youtube.com/@flowmachinery",
+            "https://twitter.com/flowmachinery"
+        ]
+    }
+    </script>
+
+    <style>
+        /* ===== RESET & BASE ===== */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+            overflow-x: hidden;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            color: #e0e6ed;
+            background-color: #0a0e17;
+            line-height: 1.6;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s ease;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Space Grotesk', 'Inter', sans-serif;
+            line-height: 1.2;
+            font-weight: 700;
+        }
+
+        .container {
+            max-width: 1240px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* ===== ANIMATIONS ===== */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-60px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(60px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes pulseGlow {
+            0%, 100% { box-shadow: 0 0 20px rgba(59, 130, 246, 0.3); }
+            50% { box-shadow: 0 0 40px rgba(59, 130, 246, 0.6); }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-12px); }
+        }
+
+        @keyframes countUp {
+            from { opacity: 0; transform: scale(0.5); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        @keyframes gridMove {
+            0% { background-position: 0 0; }
+            100% { background-position: 60px 60px; }
+        }
+
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .animate-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .delay-1 { transition-delay: 0.1s; }
+        .delay-2 { transition-delay: 0.2s; }
+        .delay-3 { transition-delay: 0.3s; }
+        .delay-4 { transition-delay: 0.4s; }
+
+        /* ===== NAVIGATION ===== */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 0 24px;
+            transition: all 0.4s ease;
+            background: rgba(10, 14, 23, 0.6);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(59, 130, 246, 0.08);
+        }
+
+        .navbar.scrolled {
+            background: rgba(10, 14, 23, 0.95);
+            border-bottom: 1px solid rgba(59, 130, 246, 0.15);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        .navbar .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 72px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #ffffff;
+            min-height: 44px;
+            min-width: 44px;
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #3b82f6, #06b6d4);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 900;
+            font-size: 1.2rem;
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .logo-icon::after {
+            content: '';
+            position: absolute;
+            inset: 2px;
+            border-radius: 8px;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .logo span {
+            color: #3b82f6;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .nav-links a {
+            padding: 10px 18px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: #94a3b8;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            min-height: 44px;
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+
+        .nav-links a:hover {
+            color: #ffffff;
+            background: rgba(59, 130, 246, 0.1);
+        }
+
+        .nav-links a.active {
+            color: #3b82f6;
+        }
+
+        .nav-cta {
+            margin-left: 16px;
+            padding: 12px 28px !important;
+            background: linear-gradient(135deg, #3b82f6, #2563eb) !important;
+            color: #ffffff !important;
+            border-radius: 10px !important;
+            font-weight: 600 !important;
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+            transition: all 0.3s ease !important;
+        }
+
+        .nav-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(59, 130, 246, 0.4) !important;
+            background: linear-gradient(135deg, #2563eb, #1d4ed8) !important;
+        }
+
+        /* Mobile Menu */
+        .mobile-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            padding: 10px;
+            min-height: 44px;
+            min-width: 44px;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            background: none;
+            z-index: 1001;
+        }
+
+        .mobile-toggle span {
+            width: 24px;
+            height: 2px;
+            background: #e0e6ed;
+            border-radius: 2px;
+            transition: all 0.3s ease;
+        }
+
+        .mobile-toggle.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+        .mobile-toggle.active span:nth-child(2) {
+            opacity: 0;
+        }
+        .mobile-toggle.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -5px);
+        }
+
+        /* ===== HERO SECTION ===== */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding-top: 72px;
+            overflow: hidden;
+            background: #0a0e17;
+        }
+
+        .hero-bg {
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+        }
+
+        .hero-bg::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(ellipse 80% 60% at 20% 50%, rgba(59, 130, 246, 0.12) 0%, transparent 70%),
+                radial-gradient(ellipse 60% 50% at 80% 30%, rgba(6, 182, 212, 0.08) 0%, transparent 60%),
+                radial-gradient(ellipse 40% 40% at 50% 80%, rgba(99, 102, 241, 0.06) 0%, transparent 50%);
+        }
+
+        .hero-grid-pattern {
+            position: absolute;
+            inset: 0;
+            background-image:
+                linear-gradient(rgba(59, 130, 246, 0.04) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(59, 130, 246, 0.04) 1px, transparent 1px);
+            background-size: 60px 60px;
+            animation: gridMove 20s linear infinite;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .hero-text {
+            animation: slideInLeft 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            background: rgba(59, 130, 246, 0.1);
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            border-radius: 100px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: #60a5fa;
+            margin-bottom: 24px;
+        }
+
+        .hero-badge-dot {
+            width: 8px;
+            height: 8px;
+            background: #3b82f6;
+            border-radius: 50%;
+            animation: pulseGlow 2s infinite;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 800;
+            color: #ffffff;
+            margin-bottom: 24px;
+            letter-spacing: -0.03em;
+            line-height: 1.1;
+        }
+
+        .hero h1 .highlight {
+            background: linear-gradient(135deg, #3b82f6, #06b6d4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-description {
+            font-size: 1.15rem;
+            color: #94a3b8;
+            margin-bottom: 40px;
+            max-width: 520px;
+            line-height: 1.7;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+            margin-bottom: 48px;
+        }
+
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 16px 36px;
+            background: linear-gradient(135deg, #3b82f6, #2563eb);
+            color: #ffffff;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 12px;
+            border: none;
+            cursor: pointer;
+            min-height: 44px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(59, 130, 246, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(59, 130, 246, 0.45);
+        }
+
+        .btn-secondary {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 16px 36px;
+            background: rgba(255, 255, 255, 0.05);
+            color: #e0e6ed;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            cursor: pointer;
+            min-height: 44px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 40px;
+        }
+
+        .hero-stat {
+            text-align: left;
+        }
+
+        .hero-stat-value {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: #ffffff;
+        }
+
+        .hero-stat-value .accent {
+            color: #3b82f6;
+        }
+
+        .hero-stat-label {
+            font-size: 0.85rem;
+            color: #64748b;
+            margin-top: 2px;
+        }
+
+        .hero-visual {
+            position: relative;
+            animation: slideInRight 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
+        .hero-image-wrapper {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            aspect-ratio: 4/3;
+            background: linear-gradient(135deg, #111827, #1e293b);
+            border: 1px solid rgba(59, 130, 246, 0.15);
+        }
+
+        .hero-image-wrapper::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.05), transparent 60%);
+            z-index: 1;
+        }
+
+        .hero-machine-display {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+        }
+
+        .machine-svg-container {
+            width: 200px;
+            height: 200px;
+            animation: float 6s ease-in-out infinite;
+            margin-bottom: 20px;
+        }
+
+        .machine-icon-main {
+            width: 100%;
+            height: 100%;
+        }
+
+        .hero-float-card {
+            position: absolute;
+            background: rgba(15, 23, 42, 0.9);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(59, 130, 246, 0.15);
+            border-radius: 14px;
+            padding: 16px 20px;
+            z-index: 5;
+        }
+
+        .float-card-1 {
+            bottom: -20px;
+            left: -30px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            animation: float 5s ease-in-out infinite;
+        }
+
+        .float-card-2 {
+            top: -15px;
+            right: -20px;
+            animation: float 7s ease-in-out infinite reverse;
+        }
+
+        .float-card-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+
+        .float-card-icon.green {
+            background: rgba(34, 197, 94, 0.15);
+            color: #4ade80;
+        }
+
+        .float-card-icon.blue {
+            background: rgba(59, 130, 246, 0.15);
+            color: #60a5fa;
+        }
+
+        .float-card-text strong {
+            display: block;
+            font-size: 0.85rem;
+            color: #ffffff;
+        }
+
+        .float-card-text span {
+            font-size: 0.75rem;
+            color: #64748b;
+        }
+
+        .float-card-metric {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #3b82f6;
+        }
+
+        .float-card-label {
+            font-size: 0.75rem;
+            color: #94a3b8;
+        }
+
+        /* ===== TRUSTED BAR ===== */
+        .trusted-bar {
+            padding: 60px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+            background: rgba(15, 23, 42, 0.3);
+        }
+
+        .trusted-bar .container {
+            text-align: center;
+        }
+
+        .trusted-label {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: #475569;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            margin-bottom: 32px;
+        }
+
+        .trusted-logos {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 48px;
+            flex-wrap: wrap;
+            opacity: 0.4;
+            transition: opacity 0.5s ease;
+        }
+
+        .trusted-logos:hover {
+            opacity: 0.6;
+        }
+
+        .trusted-logo-item {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: #94a3b8;
+            letter-spacing: 0.05em;
+            white-space: nowrap;
+        }
+
+        /* ===== PRODUCTS SECTION ===== */
+        .products-section {
+            padding: 120px 0;
+            position: relative;
+            background: #0a0e17;
+        }
+
+        .products-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(59, 130, 246, 0.06) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 64px;
+        }
+
+        .section-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 14px;
+            background: rgba(59, 130, 246, 0.08);
+            border: 1px solid rgba(59, 130, 246, 0.15);
+            border-radius: 100px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: #60a5fa;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 800;
+            color: #ffffff;
+            margin-bottom: 16px;
+            letter-spacing: -0.02em;
+        }
+
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: #64748b;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .product-card {
+            position: relative;
+            background: linear-gradient(145deg, rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.4));
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 20px;
+            padding: 36px 28px;
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .product-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #3b82f6, #06b6d4);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(59, 130, 246, 0.2);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4), 0 0 40px rgba(59, 130, 246, 0.08);
+        }
+
+        .product-card:hover::before {
+            opacity: 1;
+        }
+
+        .product-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 24px;
+            font-size: 1.6rem;
+        }
+
+        .product-icon.cnc { background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(59, 130, 246, 0.05)); }
+        .product-icon.hydraulic { background: linear-gradient(135deg, rgba(234, 179, 8, 0.15), rgba(234, 179, 8, 0.05)); }
+        .product-icon.automation { background: linear-gradient(135deg, rgba(34, 197, 94, 0.15), rgba(34, 197, 94, 0.05)); }
+        .product-icon.welding { background: linear-gradient(135deg, rgba(239, 68, 68, 0.15), rgba(239, 68, 68, 0.05)); }
+        .product-icon.conveyor { background: linear-gradient(135deg, rgba(168, 85, 247, 0.15), rgba(168, 85, 247, 0.05)); }
+        .product-icon.precision { background: linear-gradient(135deg, rgba(6, 182, 212, 0.15), rgba(6, 182, 212, 0.05)); }
+
+        .product-card h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 12px;
+        }
+
+        .product-card p {
+            font-size: 0.95rem;
+            color: #64748b;
+            line-height: 1.65;
+            margin-bottom: 20px;
+        }
+
+        .product-specs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+
+        .product-spec {
+            padding: 4px 12px;
+            background: rgba(255, 255, 255, 0.04);
+            border-radius: 6px;
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: #94a3b8;
+        }
+
+        .product-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #3b82f6;
+            min-height: 44px;
+            transition: all 0.3s ease;
+        }
+
+        .product-link:hover {
+            gap: 10px;
+            color: #60a5fa;
+        }
+
+        .product-link svg {
+            width: 16px;
+            height: 16px;
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover .product-link svg {
+            transform: translateX(4px);
+        }
+
+        /* ===== ABOUT SECTION ===== */
+        .about-section {
+            padding: 120px 0;
+            background: linear-gradient(180deg, #0d1117 0%, #0a0e17 100%);
+            position: relative;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .about-image-area {
+            position: relative;
+        }
+
+        .about-image-main {
+            width: 100%;
+            aspect-ratio: 4/3;
+            border-radius: 20px;
+            background: linear-gradient(145deg, #111827, #1e293b);
+            border: 1px solid rgba(59, 130, 246, 0.1);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .about-image-main::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+                linear-gradient(135deg, rgba(59, 130, 246, 0.08) 0%, transparent 50%),
+                repeating-linear-gradient(0deg, rgba(59, 130, 246, 0.02) 0px, rgba(59, 130, 246, 0.02) 1px, transparent 1px, transparent 20px),
+                repeating-linear-gradient(90deg, rgba(59, 130, 246, 0.02) 0px, rgba(59, 130, 246, 0.02) 1px, transparent 1px, transparent 20px);
+        }
+
+        .about-factory-illustration {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+        }
+
+        .about-experience-badge {
+            position: absolute;
+            bottom: -24px;
+            right: -24px;
+            width: 120px;
+            height: 120px;
+            border-radius: 20px;
+            background: linear-gradient(135deg, #3b82f6, #2563eb);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 12px 40px rgba(59, 130, 246, 0.3);
+            z-index: 2;
+        }
+
+        .about-experience-badge .number {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #ffffff;
+            line-height: 1;
+        }
+
+        .about-experience-badge .label {
+            font-size: 0.7rem;
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.8);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .about-text h2 {
+            font-size: clamp(2rem, 3.5vw, 2.75rem);
+            font-weight: 800;
+            color: #ffffff;
+            margin-bottom: 20px;
+            letter-spacing: -0.02em;
+        }
+
+        .about-text .lead {
+            font-size: 1.1rem;
+            color: #94a3b8;
+            line-height: 1.7;
+            margin-bottom: 24px;
+        }
+
+        .about-text p {
+            font-size: 0.95rem;
+            color: #64748b;
+            line-height: 1.7;
+            margin-bottom: 32px;
+        }
+
+        .about-features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-bottom: 36px;
+        }
+
+        .about-feature {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 16px;
+            background: rgba(59, 130, 246, 0.05);
+            border-radius: 10px;
+            border: 1px solid rgba(59, 130, 246, 0.08);
+        }
+
+        .about-feature-icon {
+            width: 32px;
+            height: 32px;
+            border-radius: 8px;
+            background: rgba(59, 130, 246, 0.12);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .about-feature span {
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: #cbd5e1;
+        }
+
+        /* ===== STATS SECTION ===== */
+        .stats-section {
+            padding: 80px 0;
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.04), rgba(6, 182, 212, 0.03));
+            border-top: 1px solid rgba(59, 130, 246, 0.06);
+            border-bottom: 1px solid rgba(59, 130, 246, 0.06);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 32px;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 32px 20px;
+            border-radius: 16px;
+            background: rgba(15, 23, 42, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.04);
+            transition: all 0.3s ease;
+        }
+
+        .stat-item:hover {
+            border-color: rgba(59, 130, 246, 0.15);
+            transform: translateY(-4px);
+        }
+
+        .stat-number {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 2.75rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #3b82f6, #06b6d4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 8px;
+            line-height: 1.1;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: #64748b;
+        }
+
+        /* ===== SOLUTIONS SECTION ===== */
+        .solutions-section {
+            padding: 120px 0;
+            background: #0a0e17;
+            position: relative;
+        }
+
+        .solutions-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+        }
+
+        .solution-card {
+            position: relative;
+            padding: 40px 36px;
+            border-radius: 20px;
+            background: linear-gradient(145deg, rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.4));
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            overflow: hidden;
+        }
+
+        .solution-card::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 120px;
+            background: linear-gradient(to top, rgba(10, 14, 23, 0.8), transparent);
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .solution-card:hover {
+            transform: translateY(-6px);
+            border-color: rgba(59, 130, 246, 0.15);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        .solution-card:hover::after {
+            opacity: 1;
+        }
+
+        .solution-number {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 3rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(6, 182, 212, 0.1));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1;
+            margin-bottom: 16px;
+        }
+
+        .solution-card h3 {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 12px;
+        }
+
+        .solution-card p {
+            font-size: 0.95rem;
+            color: #64748b;
+            line-height: 1.65;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .solution-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .solution-tag {
+            padding: 5px 14px;
+            background: rgba(59, 130, 246, 0.08);
+            border: 1px solid rgba(59, 130, 246, 0.12);
+            border-radius: 100px;
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: #60a5fa;
+        }
+
+        /* ===== TESTIMONIALS SECTION ===== */
+        .testimonials-section {
+            padding: 120px 0;
+            background: linear-gradient(180deg, #0d1117 0%, #0a0e17 100%);
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .testimonial-card {
+            padding: 36px 28px;
+            background: linear-gradient(145deg, rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.4));
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .testimonial-card:hover {
+            border-color: rgba(59, 130, 246, 0.15);
+            transform: translateY(-4px);
+        }
+
+        .testimonial-stars {
+            display: flex;
+            gap: 4px;
+            margin-bottom: 20px;
+        }
+
+        .star {
+            width: 18px;
+            height: 18px;
+            color: #eab308;
+        }
+
+        .testimonial-text {
+            font-size: 0.95rem;
+            color: #94a3b8;
+            line-height: 1.7;
+            margin-bottom: 24px;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .testimonial-avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, #1e293b, #334155);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+            font-size: 1rem;
+            color: #3b82f6;
+            flex-shrink: 0;
+        }
+
+        .testimonial-author-info strong {
+            display: block;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #ffffff;
+        }
+
+        .testimonial-author-info span {
+            font-size: 0.8rem;
+            color: #64748b;
+        }
+
+        /* ===== CLIENT LOGOS ===== */
+        .clients-section {
+            padding: 80px 0;
+            background: rgba(15, 23, 42, 0.3);
+            border-top: 1px solid rgba(255, 255, 255, 0.04);
+        }
+
+        .clients-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 24px;
+            margin-top: 40px;
+        }
+
+        .client-logo-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px 16px;
+            border-radius: 12px;
+            background: rgba(15, 23, 42, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.04);
+            transition: all 0.3s ease;
+            min-height: 80px;
+        }
+
+        .client-logo-box:hover {
+            border-color: rgba(59, 130, 246, 0.15);
+            background: rgba(15, 23, 42, 0.8);
+        }
+
+        .client-logo-box span {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: #475569;
+            letter-spacing: 0.05em;
+            text-align: center;
+        }
+
+        /* ===== CTA SECTION ===== */
+        .cta-section {
+            padding: 120px 0;
+            background: #0a0e17;
+            position: relative;
+        }
+
+        .cta-wrapper {
+            position: relative;
+            padding: 80px 60px;
+            border-radius: 28px;
+            background: linear-gradient(145deg, rgba(59, 130, 246, 0.08), rgba(6, 182, 212, 0.04));
+            border: 1px solid rgba(59, 130, 246, 0.12);
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .cta-wrapper::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(59, 130, 246, 0.1) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .cta-wrapper::after {
+            content: '';
+            position: absolute;
+            bottom: -50%;
+            left: -10%;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(6, 182, 212, 0.08) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .cta-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .cta-content h2 {
+            font-size: clamp(2rem, 4vw, 2.75rem);
+            font-weight: 800;
+            color: #ffffff;
+            margin-bottom: 16px;
+            letter-spacing: -0.02em;
+        }
+
+        .cta-content p {
+            font-size: 1.1rem;
+            color: #94a3b8;
+            max-width: 560px;
+            margin: 0 auto 40px;
+            line-height: 1.7;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 32px;
+        }
+
+        .cta-info {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+
+        .cta-info-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.85rem;
+            color: #64748b;
+        }
+
+        .cta-info-item svg {
+            width: 16px;
+            height: 16px;
+            color: #3b82f6;
+        }
+
+        /* ===== CONTACT SECTION ===== */
+        .contact-section {
+            padding: 120px 0;
+            background: linear-gradient(180deg, #0d1117 0%, #0a0e17 100%);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+        }
+
+        .contact-info h2 {
+            font-size: clamp(1.8rem, 3vw, 2.5rem);
+            font-weight: 800;
+            color: #ffffff;
+            margin-bottom: 16px;
+        }
+
+        .contact-info > p {
+            font-size: 1rem;
+            color: #64748b;
+            line-height: 1.7;
+            margin-bottom: 36px;
+        }
+
+        .contact-details {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-bottom: 36px;
+        }
+
+        .contact-detail-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+        }
+
+        .contact-detail-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            background: rgba(59, 130, 246, 0.1);
+            border: 1px solid rgba(59, 130, 246, 0.15);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .contact-detail-icon svg {
+            width: 20px;
+            height: 20px;
+            color: #3b82f6;
+        }
+
+        .contact-detail-text strong {
+            display: block;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 2px;
+        }
+
+        .contact-detail-text span,
+        .contact-detail-text a {
+            font-size: 0.9rem;
+            color: #94a3b8;
+        }
+
+        .contact-detail-text a:hover {
+            color: #3b82f6;
+        }
+
+        .contact-form-wrapper {
+            padding: 40px;
+            background: linear-gradient(145deg, rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.4));
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: #cbd5e1;
+            margin-bottom: 8px;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 14px 18px;
+            background: rgba(15, 23, 42, 0.8);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 10px;
+            color: #e0e6ed;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            min-height: 44px;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #3b82f6;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+        }
+
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: #475569;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        .form-submit {
+            width: 100%;
+            padding: 16px 32px;
+            background: linear-gradient(135deg, #3b82f6, #2563eb);
+            color: #ffffff;
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            min-height: 44px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(59, 130, 246, 0.3);
+        }
+
+        .form-submit:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(59, 130, 246, 0.4);
+        }
+
+        /* ===== FOOTER ===== */
+        .footer {
+            padding: 80px 0 0;
+            background: #070a10;
+            border-top: 1px solid rgba(255, 255, 255, 0.04);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        .footer-brand {
+            max-width: 300px;
+        }
+
+        .footer-brand .logo {
+            margin-bottom: 16px;
+        }
+
+        .footer-brand p {
+            font-size: 0.9rem;
+            color: #64748b;
+            line-height: 1.65;
+            margin-bottom: 20px;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 10px;
+        }
+
+        .footer-social a {
+            width: 44px;
+            height: 44px;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .footer-social a:hover {
+            background: rgba(59, 130, 246, 0.1);
+            border-color: rgba(59, 130, 246, 0.2);
+        }
+
+        .footer-social a svg {
+            width: 18px;
+            height: 18px;
+            color: #94a3b8;
+        }
+
+        .footer-col h4 {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 20px;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 12px;
+        }
+
+        .footer-col ul li a {
+            font-size: 0.9rem;
+            color: #64748b;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            min-height: 28px;
+        }
+
+        .footer-col ul li a:hover {
+            color: #3b82f6;
+            transform: translateX(4px);
+        }
+
+        .footer-bottom {
+            padding: 24px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.04);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .footer-bottom p {
+            font-size: 0.8rem;
+            color: #475569;
+        }
+
+        .footer-bottom-links {
+            display: flex;
+            gap: 24px;
+        }
+
+        .footer-bottom-links a {
+            font-size: 0.8rem;
+            color: #475569;
+            min-height: 44px;
+            display: flex;
+            align-items: center;
+        }
+
+        .footer-bottom-links a:hover {
+            color: #94a3b8;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 1024px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .hero-visual {
+                max-width: 500px;
+                margin: 0 auto;
+            }
+
+            .products-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 48px;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .solutions-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .testimonials-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .clients-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            *, *::before, *::after {
+                box-sizing: border-box;
+            }
+
+            html, body {
+                overflow-x: clip;
+                max-width: 100vw;
+                width: 100%;
+            }
+
+            section, footer, header, nav, main {
+                overflow-x: clip;
+                max-width: 100%;
+            }
+
+            .container {
+                max-width: 100%;
+                padding: 0 16px;
+                overflow-x: visible;
+            }
+
+            .navbar {
+                overflow-x: hidden;
+                width: 100%;
+            }
+
+            .navbar .container {
+                max-width: 100%;
+                padding: 0 16px;
+            }
+
+            .nav-links {
+                display: none;
+                position: fixed;
+                top: 72px;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba(10, 14, 23, 0.98);
+                backdrop-filter: blur(20px);
+                flex-direction: column;
+                padding: 32px 24px;
+                gap: 4px;
+            }
+
+            .nav-links.open {
+                display: flex;
+            }
+
+            .nav-links a {
+                padding: 16px 20px;
+                font-size: 1.05rem;
+                border-radius: 12px;
+            }
+
+            .nav-cta {
+                margin-left: 0 !important;
+                margin-top: 16px;
+                text-align: center;
+                justify-content: center;
+            }
+
+            .mobile-toggle {
+                display: flex;
+            }
+
+            .hero {
+                min-height: auto;
+                padding-top: 100px;
+                padding-bottom: 60px;
+            }
+
+            .hero-content {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .hero-description {
+                max-width: 100%;
+            }
+
+            .hero-visual {
+                max-width: 100%;
+            }
+
+            .section-subtitle {
+                max-width: 100%;
+            }
+
+            .hero-stats {
+                gap: 24px;
+            }
+
+            .hero-stat-value {
+                font-size: 1.5rem;
+            }
+
+            .float-card-1,
+            .float-card-2 {
+                display: none;
+            }
+
+            .products-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .about-features {
+                grid-template-columns: 1fr;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .solutions-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 16px;
+            }
+
+            .stat-number {
+                font-size: 2rem;
+            }
+
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .clients-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .trusted-logos {
+                gap: 20px;
+            }
+
+            .trusted-logo-item {
+                font-size: 0.95rem;
+            }
+
+            .cta-wrapper {
+                padding: 48px 24px;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+
+            .footer-bottom-links {
+                flex-wrap: wrap;
+                gap: 16px;
+                justify-content: center;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-buttons {
+                flex-direction: column;
+            }
+
+            .btn-primary,
+            .btn-secondary {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .hero-stats {
+                flex-direction: column;
+                gap: 16px;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .cta-buttons .btn-primary,
+            .cta-buttons .btn-secondary {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <a href="https://flowmachinery.com/" class="logo" aria-label="FlowMachinery Home">
+                <div class="logo-icon" aria-hidden="true">F</div>
+                Flow<span>Machinery</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="/pumps">Pumps</a>
+                <a href="/valves">Valves</a>
+                <a href="/compressors">Compressors</a>
+                <a href="/heat-exchangers">Heat Exchangers</a>
+                <a href="/piping-flow">Piping & Flow</a>
+                <a href="/rotating-equipment">Rotating Equipment</a>
+                <a href="/fluid-seals">Seals</a>
+                <a href="/automation-control">Automation</a>
+                <a href="/general-machinery">More</a>
+            </div>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" id="hero">
+        <div class="hero-bg" aria-hidden="true">
+            <div class="hero-grid-pattern"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        <span class="hero-badge-dot" aria-hidden="true"></span>
+                        Industry-Leading Since 1998
+                    </div>
+                    <h1>Engineered for <span class="highlight">Precision.</span> Built for <span class="highlight">Performance.</span></h1>
+                    <p class="hero-description">From CNC machining centers to fully automated production lines, FlowMachinery delivers the industrial equipment and engineering expertise that powers modern manufacturing at scale.</p>
+                    <div class="hero-buttons">
+                        <a href="#products" class="btn-primary">
+                            Explore Our Machines
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </a>
+                        <a href="#contact" class="btn-secondary">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 1v14M1 8h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                            Request Consultation
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="hero-stat">
+                            <div class="hero-stat-value">2,400<span class="accent">+</span></div>
+                            <div class="hero-stat-label">Machines Deployed</div>
+                        </div>
+                        <div class="hero-stat">
+                            <div class="hero-stat-value">98.7<span class="accent">%</span></div>
+                            <div class="hero-stat-label">Uptime Guarantee</div>
+                        </div>
+                        <div class="hero-stat">
+                            <div class="hero-stat-value">45<span class="accent">+</span></div>
+                            <div class="hero-stat-label">Countries Served</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-image-wrapper">
+                        <div class="hero-machine-display">
+                            <div class="machine-svg-container">
+                                <svg class="machine-icon-main" viewBox="0 0 200 200" fill="none" xmlns="https://www.w3.org/2000/svg" role="img" aria-label="CNC precision machinery illustration">
+                                    <!-- Base platform -->
+                                    <rect x="20" y="150" width="160" height="20" rx="4" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+                                    <!-- Machine body -->
+                                    <rect x="40" y="60" width="120" height="90" rx="6" fill="#111827" stroke="#3b82f6" stroke-width="1.5"/>
+                                    <!-- Control panel -->
+                                    <rect x="50" y="70" width="40" height="30" rx="3" fill="#0f172a" stroke="#06b6d4" stroke-width="1"/>
+                                    <!-- Screen display -->
+                                    <rect x="54" y="74" width="32" height="18" rx="2" fill="#0c1929"/>
+                                    <line x1="58" y1="80" x2="78" y2="80" stroke="#3b82f6" stroke-width="1" opacity="0.6"/>
+                                    <line x1="58" y1="84" x2="72" y2="84" stroke="#06b6d4" stroke-width="1" opacity="0.4"/>
+                                    <line x1="58" y1="88" x2="82" y2="88" stroke="#3b82f6" stroke-width="1" opacity="0.3"/>
+                                    <!-- Spindle head -->
+                                    <rect x="105" y="45" width="30" height="60" rx="4" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+                                    <rect x="112" y="105" width="16" height="20" rx="2" fill="#334155" stroke="#06b6d4" stroke-width="1"/>
+                                    <!-- Drill bit -->
+                                    <line x1="120" y1="125" x2="120" y2="145" stroke="#60a5fa" stroke-width="3" stroke-linecap="round"/>
+                                    <circle cx="120" cy="148" r="3" fill="#3b82f6"/>
+                                    <!-- Control buttons -->
+                                    <circle cx="100" y="115" r="4" fill="#22c55e" opacity="0.8"/>
+                                    <circle cx="100" y="128" r="4" fill="#eab308" opacity="0.5"/>
+                                    <circle cx="100" y="141" r="4" fill="#ef4444" opacity="0.3"/>
+                                    <!-- Status indicators -->
+                                    <circle cx="55" cy="110" r="3" fill="#22c55e">
+                                        <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+                                    </circle>
+                                    <circle cx="65" cy="110" r="3" fill="#3b82f6">
+                                        <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite"/>
+                                    </circle>
+                                    <!-- Gantry arm -->
+                                    <rect x="35" y="50" width="130" height="8" rx="3" fill="#1e293b" stroke="#3b82f6" stroke-width="1"/>
+                                    <!-- Vertical column -->
+                                    <rect x="108" y="25" width="24" height="30" rx="3" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+                                    <!-- Top housing -->
+                                    <rect x="95" y="18" width="50" height="14" rx="4" fill="#0f172a" stroke="#3b82f6" stroke-width="1"/>
+                                    <!-- Coolant lines -->
+                                    <path d="M140 70 Q155 80 150 100 Q145 120 155 140" stroke="#06b6d4" stroke-width="1" fill="none" stroke-dasharray="4 3" opacity="0.5"/>
+                                </svg>
+                            </div>
+                            <div style="text-align:center; position:relative; z-index:2;">
+                                <div style="font-family:'Space Grotesk',sans-serif; font-size:0.7rem; font-weight:600; color:#3b82f6; text-transform:uppercase; letter-spacing:0.15em; margin-bottom:4px;">5-Axis CNC Series</div>
+                                <div style="font-family:'Space Grotesk',sans-serif; font-size:1.1rem; font-weight:700; color:#ffffff;">FM-5X Pro Machining Center</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Floating Cards -->
+                    <div class="hero-float-card float-card-1">
+                        <div class="float-card-icon green" aria-hidden="true">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M16.7 5.3a1 1 0 010 1.4l-8 8a1 1 0 01-1.4 0l-4-4a1 1 0 111.4-1.4L8 12.6l7.3-7.3a1 1 0 011.4 0z" fill="currentColor"/></svg>
+                        </div>
+                        <div class="float-card-text">
+                            <strong>ISO 9001:2015 Certified</strong>
+                            <span>Quality Management</span>
+                        </div>
+                    </div>
+                    <div class="hero-float-card float-card-2">
+                        <div style="text-align:center;">
+                            <div class="float-card-metric">0.001mm</div>
+                            <div class="float-card-label">Positioning Accuracy</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TRUSTED BAR ===== -->
+    <section class="trusted-bar" aria-label="Trusted by leading manufacturers">
+        <div class="container">
+            <p class="trusted-label">Trusted by Industry Leaders</p>
+            <div class="trusted-logos">
+                <span class="trusted-logo-item">SIEMENS</span>
+                <span class="trusted-logo-item">BOSCH</span>
+                <span class="trusted-logo-item">TOYOTA</span>
+                <span class="trusted-logo-item">CATERPILLAR</span>
+                <span class="trusted-logo-item">HONEYWELL</span>
+                <span class="trusted-logo-item">GE INDUSTRIAL</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PRODUCTS SECTION ===== -->
+    <section class="products-section" id="products" aria-labelledby="products-title">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <div class="section-tag">Our Product Line</div>
+                <h2 class="section-title" id="products-title">Industrial Machinery Built to Outperform</h2>
+                <p class="section-subtitle">From standalone machines to fully integrated production systems, our equipment is engineered for maximum uptime, precision, and longevity in the most demanding environments.</p>
+            </div>
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card animate-on-scroll delay-1">
+                    <div class="product-icon cnc" aria-hidden="true">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="1.5"><rect x="2" y="6" width="20" height="14" rx="2"/><path d="M12 6V2M8 6V4M16 6V4"/><circle cx="12" cy="14" r="3"/></svg>
+                    </div>
+                    <h3>CNC Machining Centers</h3>
+                    <p>3-axis to 5-axis vertical and horizontal machining centers with sub-micron accuracy. Fanuc and Siemens controllers, 15,000+ RPM spindles, and automatic tool changers.</p>
+                    <div class="product-specs">
+                        <span class="product-spec">5-Axis</span>
+                        <span class="product-spec">15K RPM</span>
+                        <span class="product-spec">0.001mm</span>
+                        <span class="product-spec">40-Tool ATC</span>
+                    </div>
+                    <a href="#contact" class="product-link">
+                        Learn More
+                        <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </a>
+                </div>
+                <!-- Product 2 -->
+                <div class="product-card animate-on-scroll delay-2">
+                    <div class="product-icon hydraulic" aria-hidden="true">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#eab308" stroke-width="1.5"><rect x="4" y="2" width="6" height="20" rx="1"/><rect x="14" y="8" width="6" height="14" rx="1"/><path d="M10 12h4M7 2v4M17 8V4"/></svg>
+                    </div>
+                    <h3>Hydraulic Press Systems</h3>
+                    <p>High-tonnage hydraulic presses from 50 to 5,000 tons for stamping, deep drawing, forging, and composite molding. Servo-hydraulic drives for energy savings up to 40%.</p>
+                    <div class="product-specs">
+                        <span class="product-spec">5,000 Ton</span>
+                        <span class="product-spec">Servo Drive</span>
+                        <span class="product-spec">PLC Control</span>
+                        <span class="product-spec">Energy Efficient</span>
+                    </div>
+                    <a href="#contact" class="product-link">
+                        Learn More
+                        <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </a>
+                </div>
+                <!-- Product 3 -->
+                <div class="product-card animate-on-scroll delay-3">
+                    <div class="product-icon automation" aria-hidden="true">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+                    </div>
+                    <h3>Industrial Automation</h3>
+                    <p>Robotic cells, pick-and-place systems, and turnkey automated production lines. Integration with ABB, FANUC, and KUKA robotics. Industry 4.0-ready with full IoT connectivity.</p>
+                    <div class="product-specs">
+                        <span class="product-spec">6-Axis Robot</span>
+                        <span class="product-spec">IoT Ready</span>
+                        <span class="product-spec">SCADA</span>
+                        <span class="product-spec">Industry 4.0</span>
+                    </div>
+                    <a href="#contact" class="product-link">
+                        Learn More
+                        <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </a>
+                </div>
+                <!-- Product 4 -->
+                <div class="product-card animate-on-scroll delay-1">
+                    <div class="product-icon welding" aria-hidden="true">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#f87171" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                    </div>
+                    <h3>Welding & Fabrication</h3>
+                    <p>Automated MIG/TIG/laser welding stations, robotic welding cells, and custom fabrication systems. Seam tracking, adaptive control, and real-time weld monitoring.</p>
+                    <div class="product-specs">
+                        <span class="product-spec">Laser Weld</span>
+                        <span class="product-spec">Seam Track</span>
+                        <span class="product-spec">Auto Feed</span>
+                        <span class="product-spec">NDT Integrated</span>
+                    </div>
+                    <a href="#contact" class="product-link">
+                        Learn More
+                        <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </a>
+                </div>
+                <!-- Product 5 -->
+                <div class="product-card animate-on-scroll delay-2">
+                    <div class="product-icon conveyor" aria-hidden="true">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="1.5"><rect x="2" y="10" width="20" height="4" rx="2"/><circle cx="5" cy="12" r="1.5"/><circle cx="12" cy="12" r="1.5"/><circle cx="19" cy="12" r="1.5"/><path d="M6 10V6h4v4M14 10V6h4v4"/></svg>
+                    </div>
+                    <h3>Conveyor & Material Handling</h3>
+                    <p>Custom-engineered belt, roller, and chain conveyor systems. Automated guided vehicles (AGVs), palletizers, and integrated material flow management systems.</p>
+                    <div class="product-specs">
+                        <span class="product-spec">AGV Fleet</span>
+                        <span class="product-spec">Smart Sort</span>
+                        <span class="product-spec">Heavy Duty</span>
+                        <span class="product-spec">Modular</span>
+                    </div>
+                    <a href="#contact" class="product-link">
+                        Learn More
+                        <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </a>
+                </div>
+                <!-- Product 6 -->
+                <div class="product-card animate-on-scroll delay-3">
+                    <div class="product-icon precision" aria-hidden="true">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#22d3ee" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/><line x1="12" y1="2" x2="12" y2="6"/><line x1="12" y1="18" x2="12" y2="22"/><line x1="2" y1="12" x2="6" y2="12"/><line x1="18" y1="12" x2="22" y2="12"/></svg>
+                    </div>
+                    <h3>Precision Measurement & QC</h3>
+                    <p>Coordinate measuring machines (CMM), optical inspection systems, and in-line quality control stations. AI-powered defect detection with 99.9% accuracy.</p>
+                    <div class="product-specs">
+                        <span class="product-spec">CMM</span>
+                        <span class="product-spec">AI Vision</span>
+                        <span class="product-spec">Laser Scan</span>
+                        <span class="product-spec">SPC Ready</span>
+                    </div>
+                    <a href="#contact" class="product-link">
+                        Learn More
+                        <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section class="about-section" id="about" aria-labelledby="about-title">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image-area animate-on-scroll">
+                    <div class="about-image-main">
+                        <div class="about-factory-illustration">
+                            <svg viewBox="0 0 400 260" fill="none" style="width:100%; max-width:360px;" role="img" aria-label="FlowMachinery factory floor illustration showing production facility">
+                                <!-- Factory building -->
+                                <rect x="40" y="80" width="320" height="140" rx="4" fill="#0f172a" stroke="#3b82f6" stroke-width="1"/>
+                                <!-- Roof -->
+                                <polygon points="30,80 200,20 370,80" fill="#111827" stroke="#3b82f6" stroke-width="1"/>
+                                <!-- Windows row 1 -->
+                                <rect x="60" y="100" width="40" height="30" rx="2" fill="#0c1929" stroke="#1e40af" stroke-width="0.5"/>
+                                <rect x="115" y="100" width="40" height="30" rx="2" fill="#0c1929" stroke="#1e40af" stroke-width="0.5"/>
+                                <rect x="170" y="100" width="40" height="30" rx="2" fill="#0c1929" stroke="#1e40af" stroke-width="0.5"/>
+                                <rect x="225" y="100" width="40" height="30" rx="2" fill="#0c1929" stroke="#1e40af" stroke-width="0.5"/>
+                                <rect x="280" y="100" width="40" height="30" rx="2" fill="#0c1929" stroke="#1e40af" stroke-width="0.5"/>
+                                <!-- Windows glow -->
+                                <rect x="62" y="102" width="36" height="26" rx="1" fill="#3b82f6" opacity="0.06"/>
+                                <rect x="117" y="102" width="36" height="26" rx="1" fill="#06b6d4" opacity="0.06"/>
+                                <rect x="172" y="102" width="36" height="26" rx="1" fill="#3b82f6" opacity="0.06"/>
+                                <rect x="227" y="102" width="36" height="26" rx="1" fill="#06b6d4" opacity="0.06"/>
+                                <rect x="282" y="102" width="36" height="26" rx="1" fill="#3b82f6" opacity="0.06"/>
+                                <!-- Large door -->
+                                <rect x="160" y="160" width="80" height="60" rx="3" fill="#1e293b" stroke="#3b82f6" stroke-width="1"/>
+                                <line x1="200" y1="160" x2="200" y2="220" stroke="#3b82f6" stroke-width="0.5" opacity="0.5"/>
+                                <!-- Conveyor inside door -->
+                                <rect x="170" y="200" width="60" height="4" rx="2" fill="#334155"/>
+                                <circle cx="180" cy="202" r="2" fill="#3b82f6" opacity="0.5"/>
+                                <circle cx="195" cy="202" r="2" fill="#3b82f6" opacity="0.5"/>
+                                <circle cx="210" cy="202" r="2" fill="#3b82f6" opacity="0.5"/>
+                                <!-- Smoke stacks -->
+                                <rect x="80" y="40" width="12" height="40" rx="2" fill="#1e293b" stroke="#3b82f6" stroke-width="0.5"/>
+                                <rect x="310" y="50" width="12" height="30" rx="2" fill="#1e293b" stroke="#3b82f6" stroke-width="0.5"/>
+                                <!-- Smoke particles -->
+                                <circle cx="86" cy="32" r="4" fill="#334155" opacity="0.3">
+                                    <animate attributeName="cy" values="32;20;32" dur="4s" repeatCount="indefinite"/>
+                                    <animate attributeName="opacity" values="0.3;0;0.3" dur="4s" repeatCount="indefinite"/>
+                                </circle>
+                                <circle cx="90" cy="28" r="3" fill="#334155" opacity="0.2">
+                                    <animate attributeName="cy" values="28;16;28" dur="5s" repeatCount="indefinite"/>
+                                    <animate attributeName="opacity" values="0.2;0;0.2" dur="5s" repeatCount="indefinite"/>
+                                </circle>
+                                <!-- Ground -->
+                                <line x1="20" y1="220" x2="380" y2="220" stroke="#1e293b" stroke-width="2"/>
+                                <!-- Crane -->
+                                <line x1="340" y1="80" x2="340" y2="140" stroke="#475569" stroke-width="1.5"/>
+                                <line x1="320" y1="90" x2="360" y2="90" stroke="#475569" stroke-width="1.5"/>
+                                <line x1="355" y1="90" x2="355" y2="120" stroke="#475569" stroke-width="1" stroke-dasharray="3 2"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="about-experience-badge">
+                        <span class="number">28</span>
+                        <span class="label">Years</span>
+                    </div>
+                </div>
+                <div class="about-text animate-on-scroll delay-2">
+                    <div class="section-tag">About FlowMachinery</div>
+                    <h2 id="about-title">Engineering Excellence Since 1998</h2>
+                    <p class="lead">For over two decades, FlowMachinery has been at the forefront of industrial equipment innovation, delivering turnkey solutions that transform how the world manufactures.</p>
+                    <p>Headquartered in Cleveland, Ohio, with regional offices in Munich, Shanghai, and Sao Paulo, we serve manufacturers across automotive, aerospace, energy, electronics, and heavy industry. Our team of 800+ engineers, technicians, and project managers brings deep domain expertise to every engagement, from single-machine installations to multi-site factory automation overhauls.</p>
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <div class="about-feature-icon" aria-hidden="true">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.3 4.3a1 1 0 010 1.4l-6 6a1 1 0 01-1.4 0l-3-3a1 1 0 111.4-1.4L6.6 9.6l5.3-5.3a1 1 0 011.4 0z" fill="#3b82f6"/></svg>
+                            </div>
+                            <span>ISO 9001:2015 Certified</span>
+                        </div>
+                        <div class="about-feature">
+                            <div class="about-feature-icon" aria-hidden="true">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.3 4.3a1 1 0 010 1.4l-6 6a1 1 0 01-1.4 0l-3-3a1 1 0 111.4-1.4L6.6 9.6l5.3-5.3a1 1 0 011.4 0z" fill="#3b82f6"/></svg>
+                            </div>
+                            <span>24/7 Global Support</span>
+                        </div>
+                        <div class="about-feature">
+                            <div class="about-feature-icon" aria-hidden="true">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.3 4.3a1 1 0 010 1.4l-6 6a1 1 0 01-1.4 0l-3-3a1 1 0 111.4-1.4L6.6 9.6l5.3-5.3a1 1 0 011.4 0z" fill="#3b82f6"/></svg>
+                            </div>
+                            <span>CE & UL Compliant</span>
+                        </div>
+                        <div class="about-feature">
+                            <div class="about-feature-icon" aria-hidden="true">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.3 4.3a1 1 0 010 1.4l-6 6a1 1 0 01-1.4 0l-3-3a1 1 0 111.4-1.4L6.6 9.6l5.3-5.3a1 1 0 011.4 0z" fill="#3b82f6"/></svg>
+                            </div>
+                            <span>Turnkey Installation</span>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn-primary">
+                        Schedule a Facility Tour
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== STATS SECTION ===== -->
+    <section class="stats-section" aria-label="Company statistics">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item animate-on-scroll delay-1">
+                    <div class="stat-number">2,400+</div>
+                    <div class="stat-label">Machines Installed Worldwide</div>
+                </div>
+                <div class="stat-item animate-on-scroll delay-2">
+                    <div class="stat-number">800+</div>
+                    <div class="stat-label">Engineers & Technicians</div>
+                </div>
+                <div class="stat-item animate-on-scroll delay-3">
+                    <div class="stat-number">45+</div>
+                    <div class="stat-label">Countries with Active Clients</div>
+                </div>
+                <div class="stat-item animate-on-scroll delay-4">
+                    <div class="stat-number">98.7%</div>
+                    <div class="stat-label">Average Machine Uptime</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SOLUTIONS SECTION ===== -->
+    <section class="solutions-section" id="solutions" aria-labelledby="solutions-title">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <div class="section-tag">Industry Solutions</div>
+                <h2 class="section-title" id="solutions-title">Tailored Solutions for Every Sector</h2>
+                <p class="section-subtitle">We understand that each industry has unique demands. Our solutions are engineered to meet the specific precision, throughput, and compliance requirements of your sector.</p>
+            </div>
+            <div class="solutions-grid">
+                <div class="solution-card animate-on-scroll delay-1">
+                    <div class="solution-number">01</div>
+                    <h3>Automotive Manufacturing</h3>
+                    <p>Complete production lines for engine blocks, transmission cases, body panels, and EV battery enclosures. High-speed stamping, robotic welding cells, and automated assembly systems designed for the automotive industry's demanding cycle times and quality standards.</p>
+                    <div class="solution-tags">
+                        <span class="solution-tag">Powertrain</span>
+                        <span class="solution-tag">Body-in-White</span>
+                        <span class="solution-tag">EV Components</span>
+                        <span class="solution-tag">Stamping Lines</span>
+                    </div>
+                </div>
+                <div class="solution-card animate-on-scroll delay-2">
+                    <div class="solution-number">02</div>
+                    <h3>Aerospace & Defense</h3>
+                    <p>5-axis simultaneous machining for turbine blades, structural airframe components, and satellite parts. NADCAP-compliant processes, traceability systems, and exotic material capabilities including titanium, Inconel, and carbon composites.</p>
+                    <div class="solution-tags">
+                        <span class="solution-tag">Turbine Blades</span>
+                        <span class="solution-tag">Structural Parts</span>
+                        <span class="solution-tag">NADCAP</span>
+                        <span class="solution-tag">Exotic Alloys</span>
+                    </div>
+                </div>
+                <div class="solution-card animate-on-scroll delay-3">
+                    <div class="solution-number">03</div>
+                    <h3>Energy & Power Generation</h3>
+                    <p>Heavy-duty machining and fabrication systems for wind turbine components, oil & gas valve bodies, heat exchangers, and nuclear-grade fittings. Designed for oversized parts and extreme material hardness.</p>
+                    <div class="solution-tags">
+                        <span class="solution-tag">Wind Energy</span>
+                        <span class="solution-tag">Oil & Gas</span>
+                        <span class="solution-tag">Nuclear</span>
+                        <span class="solution-tag">Heavy Wall</span>
+                    </div>
+                </div>
+                <div class="solution-card animate-on-scroll delay-4">
+                    <div class="solution-number">04</div>
+                    <h3>Electronics & Semiconductor</h3>
+                    <p>Cleanroom-compatible precision systems for wafer handling, PCB assembly, connector manufacturing, and micro-machining. Sub-micron positioning, vibration isolation, and ESD-safe designs for sensitive environments.</p>
+                    <div class="solution-tags">
+                        <span class="solution-tag">Wafer Handling</span>
+                        <span class="solution-tag">Cleanroom</span>
+                        <span class="solution-tag">Micro-Machining</span>
+                        <span class="solution-tag">ESD Safe</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS SECTION ===== -->
+    <section class="testimonials-section" id="testimonials" aria-labelledby="testimonials-title">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <div class="section-tag">Client Testimonials</div>
+                <h2 class="section-title" id="testimonials-title">What Our Clients Say</h2>
+                <p class="section-subtitle">Manufacturers worldwide rely on FlowMachinery for mission-critical production. Here is what industry leaders have to say about working with us.</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card animate-on-scroll delay-1">
+                    <div class="testimonial-stars" aria-label="5 out of 5 stars">
+                        <svg class="star" viewBox="0 0 18 18" fill="currentColor" aria-hidden="true"><path d="M9 1l2.47 5.01L17 6.87l-4 3.9.94 5.5L9 13.77l-4.94 2.5.94-5.5-4-3.9 5.53-.86L9 1z"/></svg>
+                        <svg class="star" viewBox="0 0 18 18" fill="currentColor" aria-hidden="true"><path d="M9 1l2.47 5.01L17 6.87l-4 3.9.94 5.5L9 13.77l-4.94 2.5.94-5.5-4-3.9 5.53-.86L9 1z"/></svg>
+                        <svg class="star" viewBox="0 0 18 18" fill="currentColor" aria-hidden="true"><path d="M9 1l2.47 5.01L17 6.87l-4 3.9.94 5.5L9 13.77l-4.94 2.5.94-5.5-4-3.9 5.53-.86L9 1z"/></svg>
+                        <svg class="star" viewBox="0 0 18 18" fill="currentColor" aria-hidden="true"><path d="M9 1l2.47 5.01L17 6.87l-4 3.9.94 5.5L9 13.77l-4.94 2.5.94-5.5-4-3.9 5.53-.86L9 1z"/></svg>
+                        <svg class="star" viewBox="0 0 18 18" fill="currentColor" aria-hidden="true"><path d="M9 1l2.47 5.01L17 6.87l-4 3.9.94 5.5L9 13.77l-4.94 2.5.94-5.5-4-3.9 5.53-.86L9 1z"/></svg>
+                    </div>
+                    <p class="testimonial-text">"FlowMachinery's 5-axis CNC line increased our aerospace turbine blade output by 340% while holding tolerances under 5 microns. Their engineering team reconfigured our entire production floor in just 6 weeks. Truly exceptional execution."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar" aria-hidden="true">MK</div>
+                        <div class="testimonial-author-info">
+                            <strong>Michael Krause</strong>
+                            <span>VP of Manufacturing, AeroTech Dynamics</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card animate-on-scroll delay-2">
+                    <div class="testimonial-stars" aria-label="5 out of 5 stars">
+                        <svg class="star" viewBox="0 0 18 18" fill="currentColor" aria-hidden="true"><path d="M9 1l2.47 5.01L17 6.87l-4 3.9.94 5.5L9 13.77l-4.94 2.5.94-5.5-4-3.9 5.53-.86L9 1z"/></svg>
+                        <svg class="star" viewBox="0 0 18 18" fill="currentColor" aria-hidden="true"><path d="M9 1l2.47 5.01L17 6.87l-4 3.9.94 5.5L9 13.77l-4.94 2.5.94-5.5-4-3.9 5.53-.86L9 1z"/></svg>
+                        <svg class="star" viewBox="0 0 18 18" fill="currentColor" aria-hidden="true"><path d="M9 1l2.47 5.01L17 6.87l-4 3.9.94 5.5L9 13.77l-4.94 2.5.94-5.5-4-3.9 5.53-.86L9 1z"/></svg>
+                        <svg class="star" viewBox="0 0 18 18" fill="currentColor" aria-hidden="true"><path d="M9 1l2.47 5.01L17 6.87l-4 3.9.94 5.5L9 13.77l-4.94 2.5.94-5.5-4-3.9 5.53-.86L9 1z"/></svg>
+                        <svg class="star" viewBox="0 0 18 18" fill="currentColor" aria-hidden="true"><path d="M9 1l2.47 5.01L17 6.87l-4 3.9.94 5.5L9 13.77l-4.94 2.5.94-5.5-4-3.9 5.53-.86L9 1z"/></svg>
+                    </div>
+                    <p class="testimonial-text">"We replaced three legacy stamping lines with a single FlowMachinery servo-hydraulic press system. Energy costs dropped 38%, die changeover went from 45 minutes to under 8, and our scrap rate fell to near zero. The ROI paid for itself in 14 months."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar" aria-hidden="true">SL</div>
+                        <div class="testimonial-author-info">
+                            <strong>Sarah Liu</strong>
+                            <span>Plant Director, Meridian Automotive Group</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card animate-on-scroll delay-3">
+                    <div class="testimonial-stars" aria-label="5 out of 5 stars">
+                        <svg class="star" viewBox="0 0 18 18" fill="currentColor" aria-hidden="true"><path d="M9 1l2.47 5.01L17 6.87l-4 3.9.94 5.5L9 13.77l-4.94 2.5.94-5.5-4-3.9 5.53-.86L9 1z"/></svg>
+                        <svg class="star" viewBox="0 0 18 18" fill="currentColor" aria-hidden="true"><path d="M9 1l2.47 5.01L17 6.87l-4 3.9.94 5.5L9 13.77l-4.94 2.5.94-5.5-4-3.9 5.53-.86L9 1z"/></svg>
+                        <svg class="star" viewBox="0 0 18 18" fill="currentColor" aria-hidden="true"><path d="M9 1l2.47 5.01L17 6.87l-4 3.9.94 5.5L9 13.77l-4.94 2.5.94-5.5-4-3.9 5.53-.86L9 1z"/></svg>
+                        <svg class="star" viewBox="0 0 18 18" fill="currentColor" aria-hidden="true"><path d="M9 1l2.47 5.01L17 6.87l-4 3.9.94 5.5L9 13.77l-4.94 2.5.94-5.5-4-3.9 5.53-.86L9 1z"/></svg>
+                        <svg class="star" viewBox="0 0 18 18" fill="currentColor" aria-hidden="true"><path d="M9 1l2.47 5.01L17 6.87l-4 3.9.94 5.5L9 13.77l-4.94 2.5.94-5.5-4-3.9 5.53-.86L9 1z"/></svg>
+                    </div>
+                    <p class="testimonial-text">"The IoT monitoring platform that comes with their machines is a game-changer. We get predictive maintenance alerts 72 hours before potential failures. Our unplanned downtime dropped by 91% in the first year. Outstanding technology and support."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar" aria-hidden="true">RP</div>
+                        <div class="testimonial-author-info">
+                            <strong>Roberto Pereira</strong>
+                            <span>CTO, Ventos Energy Solutions</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CLIENT LOGOS ===== -->
+    <section class="clients-section" aria-label="Our clients">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <p class="trusted-label" style="margin-bottom:0;">Trusted Partners Across Industries</p>
+            </div>
+            <div class="clients-grid">
+                <div class="client-logo-box animate-on-scroll delay-1"><span>AeroTech Dynamics</span></div>
+                <div class="client-logo-box animate-on-scroll delay-1"><span>Meridian Auto</span></div>
+                <div class="client-logo-box animate-on-scroll delay-2"><span>Ventos Energy</span></div>
+                <div class="client-logo-box animate-on-scroll delay-2"><span>TitanForge Inc.</span></div>
+                <div class="client-logo-box animate-on-scroll delay-3"><span>NexGen Semi</span></div>
+                <div class="client-logo-box animate-on-scroll delay-3"><span>Pacific Shipyards</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA SECTION ===== -->
+    <section class="cta-section" aria-label="Call to action">
+        <div class="container">
+            <div class="cta-wrapper animate-on-scroll">
+                <div class="cta-content">
+                    <h2>Ready to Upgrade Your Production Line?</h2>
+                    <p>Whether you need a single high-precision machine or a complete factory automation overhaul, our engineering team is ready to design a solution that fits your throughput targets and budget.</p>
+                    <div class="cta-buttons">
+                        <a href="#contact" class="btn-primary">
+                            Get a Custom Quote
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </a>
+                        <a href="https://flowmachinery.com/catalog" class="btn-secondary">
+                            Download Product Catalog
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 2v8M4 7l4 4 4-4M2 13h12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </a>
+                    </div>
+                    <div class="cta-info">
+                        <div class="cta-info-item">
+                            <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.3 4.3a1 1 0 010 1.4l-6 6a1 1 0 01-1.4 0l-3-3a1 1 0 111.4-1.4L6.6 9.6l5.3-5.3a1 1 0 011.4 0z" fill="currentColor"/></svg>
+                            Free engineering consultation
+                        </div>
+                        <div class="cta-info-item">
+                            <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.3 4.3a1 1 0 010 1.4l-6 6a1 1 0 01-1.4 0l-3-3a1 1 0 111.4-1.4L6.6 9.6l5.3-5.3a1 1 0 011.4 0z" fill="currentColor"/></svg>
+                            Custom CAD/CAM layouts included
+                        </div>
+                        <div class="cta-info-item">
+                            <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.3 4.3a1 1 0 010 1.4l-6 6a1 1 0 01-1.4 0l-3-3a1 1 0 111.4-1.4L6.6 9.6l5.3-5.3a1 1 0 011.4 0z" fill="currentColor"/></svg>
+                            Response within 24 hours
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info animate-on-scroll">
+                    <div class="section-tag">Get In Touch</div>
+                    <h2 id="contact-title">Let's Build Your Next Production Line</h2>
+                    <p>Reach out to our engineering sales team for product specifications, custom quotations, or to schedule a visit to our demonstration facility in Cleveland.</p>
+                    <div class="contact-details">
+                        <div class="contact-detail-item">
+                            <div class="contact-detail-icon" aria-hidden="true">
+                                <svg viewBox="0 0 20 20" fill="none"><path d="M2 4a2 2 0 012-2h12a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V4z" stroke="#3b82f6" stroke-width="1.5"/><path d="M2 6l8 5 8-5" stroke="#3b82f6" stroke-width="1.5"/></svg>
+                            </div>
+                            <div class="contact-detail-text">
+                                <strong>Email Us</strong>
+                                <a href="mailto:sales@flowmachinery.com">sales@flowmachinery.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-detail-item">
+                            <div class="contact-detail-icon" aria-hidden="true">
+                                <svg viewBox="0 0 20 20" fill="none"><path d="M3 5a2 2 0 012-2h2.28a1 1 0 01.95.68l1.1 3.3a1 1 0 01-.45 1.15l-1.4.94a10 10 0 004.45 4.45l.94-1.4a1 1 0 011.15-.45l3.3 1.1a1 1 0 01.68.95V16a2 2 0 01-2 2A15 15 0 013 5z" stroke="#3b82f6" stroke-width="1.5"/></svg>
+                            </div>
+                            <div class="contact-detail-text">
+                                <strong>Call Us</strong>
+                                <a href="tel:+18005550198">+1 (800) 555-0198</a>
+                            </div>
+                        </div>
+                        <div class="contact-detail-item">
+                            <div class="contact-detail-icon" aria-hidden="true">
+                                <svg viewBox="0 0 20 20" fill="none"><path d="M10 2a6 6 0 00-6 6c0 4.5 6 10 6 10s6-5.5 6-10a6 6 0 00-6-6z" stroke="#3b82f6" stroke-width="1.5"/><circle cx="10" cy="8" r="2" stroke="#3b82f6" stroke-width="1.5"/></svg>
+                            </div>
+                            <div class="contact-detail-text">
+                                <strong>Visit Us</strong>
+                                <span>2800 Industrial Parkway, Suite 400<br>Cleveland, OH 44115, USA</span>
+                            </div>
+                        </div>
+                        <div class="contact-detail-item">
+                            <div class="contact-detail-icon" aria-hidden="true">
+                                <svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="#3b82f6" stroke-width="1.5"/><path d="M10 5v5l3 3" stroke="#3b82f6" stroke-width="1.5" stroke-linecap="round"/></svg>
+                            </div>
+                            <div class="contact-detail-text">
+                                <strong>Business Hours</strong>
+                                <span>Mon - Fri: 7:00 AM - 6:00 PM EST<br>24/7 Emergency Support Available</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper animate-on-scroll delay-2">
+                    <form id="contactForm" action="https://flowmachinery.com/api/contact" method="POST" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" placeholder="John" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" placeholder="Smith" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Work Email *</label>
+                                <input type="email" id="email" name="email" placeholder="john@company.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company Name *</label>
+                            <input type="text" id="company" name="company" placeholder="Your company name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="interest">Area of Interest</label>
+                            <select id="interest" name="interest">
+                                <option value="">Select a product category</option>
+                                <option value="cnc">CNC Machining Centers</option>
+                                <option value="hydraulic">Hydraulic Press Systems</option>
+                                <option value="automation">Industrial Automation</option>
+                                <option value="welding">Welding & Fabrication</option>
+                                <option value="conveyor">Conveyor & Material Handling</option>
+                                <option value="precision">Precision Measurement & QC</option>
+                                <option value="turnkey">Turnkey Production Lines</option>
+                                <option value="other">Other / Custom Solution</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Project Details</label>
+                            <textarea id="message" name="message" placeholder="Tell us about your production requirements, volume targets, timeline, and any special specifications..."></textarea>
+                        </div>
+                        <button type="submit" class="form-submit">Submit Inquiry</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="https://flowmachinery.com/" class="logo" aria-label="FlowMachinery Home">
+                        <div class="logo-icon" aria-hidden="true">F</div>
+                        Flow<span>Machinery</span>
+                    </a>
+                    <p>Precision-engineered industrial machinery and automation solutions for manufacturers worldwide. ISO 9001:2015 certified. CE & UL compliant.</p>
+                    <div class="footer-social">
+                        <a href="https://www.linkedin.com/company/flowmachinery" aria-label="FlowMachinery on LinkedIn" target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M4.5 3A1.5 1.5 0 003 4.5 1.5 1.5 0 004.5 6 1.5 1.5 0 006 4.5 1.5 1.5 0 004.5 3zM3 8h3v9H3V8zm5.5 0H11v1.2c.5-.8 1.6-1.4 2.8-1.4 3 0 3.2 2 3.2 4.5V17h-3v-4.2c0-1-.02-2.3-1.4-2.3-1.4 0-1.6 1.1-1.6 2.2V17H8.5V8z"/></svg>
+                        </a>
+                        <a href="https://www.youtube.com/@flowmachinery" aria-label="FlowMachinery on YouTube" target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M17.8 6.2s-.2-1.2-.7-1.7c-.7-.7-1.4-.7-1.8-.8C12.5 3.5 10 3.5 10 3.5s-2.5 0-5.3.2c-.4.1-1.1.1-1.8.8-.5.5-.7 1.7-.7 1.7S2 7.6 2 9v1.3c0 1.4.2 2.8.2 2.8s.2 1.2.7 1.7c.7.7 1.6.7 2 .8 1.4.1 5.1.2 5.1.2s2.5 0 5.3-.2c.4-.1 1.1-.1 1.8-.8.5-.5.7-1.7.7-1.7s.2-1.4.2-2.8V9c0-1.4-.2-2.8-.2-2.8zM8 12.5V6.8l5 2.9-5 2.8z"/></svg>
+                        </a>
+                        <a href="https://twitter.com/flowmachinery" aria-label="FlowMachinery on X (Twitter)" target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M15.3 3H18l-5.7 6.5L19 17h-5.2l-4.1-5.4L4.8 17H2l6.1-7L1.7 3h5.3l3.8 5L15.3 3zm-1 12.5h1.5L6.2 4.4H4.6l9.7 11.1z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="https://flowmachinery.com/cnc-machines">CNC Machines</a></li>
+                        <li><a href="https://flowmachinery.com/hydraulic-presses">Hydraulic Presses</a></li>
+                        <li><a href="https://flowmachinery.com/automation">Automation Systems</a></li>
+                        <li><a href="https://flowmachinery.com/welding">Welding Equipment</a></li>
+                        <li><a href="https://flowmachinery.com/conveyors">Conveyors & AGVs</a></li>
+                        <li><a href="https://flowmachinery.com/inspection">Inspection Systems</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Solutions</h4>
+                    <ul>
+                        <li><a href="https://flowmachinery.com/automotive">Automotive</a></li>
+                        <li><a href="https://flowmachinery.com/aerospace">Aerospace</a></li>
+                        <li><a href="https://flowmachinery.com/energy">Energy & Power</a></li>
+                        <li><a href="https://flowmachinery.com/electronics">Electronics</a></li>
+                        <li><a href="https://flowmachinery.com/defense">Defense</a></li>
+                        <li><a href="https://flowmachinery.com/general-mfg">General Mfg</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="https://flowmachinery.com/catalog">Product Catalog</a></li>
+                        <li><a href="https://flowmachinery.com/case-studies">Case Studies</a></li>
+                        <li><a href="https://flowmachinery.com/whitepapers">Whitepapers</a></li>
+                        <li><a href="https://flowmachinery.com/blog">Engineering Blog</a></li>
+                        <li><a href="https://flowmachinery.com/webinars">Webinars</a></li>
+                        <li><a href="https://flowmachinery.com/faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="https://flowmachinery.com/about">About Us</a></li>
+                        <li><a href="https://flowmachinery.com/careers">Careers</a></li>
+                        <li><a href="https://flowmachinery.com/news">News & Press</a></li>
+                        <li><a href="https://flowmachinery.com/partners">Partners</a></li>
+                        <li><a href="https://flowmachinery.com/sustainability">Sustainability</a></li>
+                        <li><a href="https://flowmachinery.com/contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 FlowMachinery, Inc. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="https://flowmachinery.com/privacy-policy">Privacy Policy</a>
+                    <a href="https://flowmachinery.com/terms-of-service">Terms of Service</a>
+                    <a href="https://flowmachinery.com/cookie-policy">Cookie Policy</a>
+                    <a href="https://flowmachinery.com/sitemap.xml">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== JAVASCRIPT ===== -->
+    <script>
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        let lastScroll = 0;
+        window.addEventListener('scroll', function() {
+            const currentScroll = window.pageYOffset;
+            if (currentScroll > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+            lastScroll = currentScroll;
+        }, { passive: true });
+
+        // Mobile menu toggle
+        const mobileToggle = document.getElementById('mobileToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        mobileToggle.addEventListener('click', function() {
+            this.classList.toggle('active');
+            navLinks.classList.toggle('open');
+            const isOpen = navLinks.classList.contains('open');
+            this.setAttribute('aria-expanded', isOpen);
+        });
+
+        // Close mobile menu on link click
+        navLinks.querySelectorAll('a').forEach(function(link) {
+            link.addEventListener('click', function() {
+                mobileToggle.classList.remove('active');
+                navLinks.classList.remove('open');
+                mobileToggle.setAttribute('aria-expanded', 'false');
+            });
+        });
+
+        // Scroll animations using IntersectionObserver
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px 0px -60px 0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.animate-on-scroll').forEach(function(el) {
+            observer.observe(el);
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+            anchor.addEventListener('click', function(e) {
+                var targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                var target = document.querySelector(targetId);
+                if (target) {
+                    e.preventDefault();
+                    var navHeight = navbar.offsetHeight;
+                    var targetPosition = target.getBoundingClientRect().top + window.pageYOffset - navHeight;
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Simple form handling
+        var contactForm = document.getElementById('contactForm');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                var btn = this.querySelector('.form-submit');
+                var originalText = btn.textContent;
+                btn.textContent = 'Sending...';
+                btn.disabled = true;
+                btn.style.opacity = '0.7';
+
+                setTimeout(function() {
+                    btn.textContent = 'Inquiry Submitted!';
+                    btn.style.background = 'linear-gradient(135deg, #22c55e, #16a34a)';
+                    btn.style.opacity = '1';
+
+                    setTimeout(function() {
+                        btn.textContent = originalText;
+                        btn.style.background = '';
+                        btn.disabled = false;
+                        contactForm.reset();
+                    }, 3000);
+                }, 1500);
+            });
+        }
+
+        // Animated counter for stats (optional enhancement)
+        function animateValue(element, start, end, duration, suffix) {
+            var range = end - start;
+            var startTime = null;
+            function step(timestamp) {
+                if (!startTime) startTime = timestamp;
+                var progress = Math.min((timestamp - startTime) / duration, 1);
+                var eased = 1 - Math.pow(1 - progress, 3);
+                var current = Math.floor(start + range * eased);
+                element.textContent = current.toLocaleString() + suffix;
+                if (progress < 1) {
+                    requestAnimationFrame(step);
+                }
+            }
+            requestAnimationFrame(step);
+        }
+    </script>
+
+</body>
+</html>
